@@ -1,0 +1,20 @@
+# PeptideFold Training Configuration
+training:
+  device: "auto"  # auto, cpu, cuda
+  mixed_precision: true
+  gradient_clip: 1.0
+  
+optimizer:
+  type: "AdamW"
+  lr: 0.001
+  weight_decay: 0.01
+  
+scheduler:
+  type: "ReduceLROnPlateau"
+  patience: 5
+  factor: 0.5
+  
+logging:
+  log_every: 10
+  save_every: 100
+  validate_every: 50

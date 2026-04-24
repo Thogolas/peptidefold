@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+env/
+peptidefold_env/
+
+# Data (too large for git)
+data/raw/
+data/processed/
+data/splits/
+*.pdb
+*.cif
+*.npz
+
+# Model checkpoints (too large for git)
+results/
+*.pt
+*.pth
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Misc
+backups/
+archive/
+.claude/

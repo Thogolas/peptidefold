@@ -1,0 +1,21 @@
+# PeptideFold Data Configuration
+data:
+  target_protein: "peptide"
+  max_structures: 500
+  min_resolution: 2.5  # Angstroms
+  min_r_factor: 0.25
+  sequence_length: 30  # Max peptide length
+  
+pdb:
+  download_dir: "data/raw/pdb"
+  processed_dir: "data/processed"
+  
+msa:
+  max_sequences: 256
+  min_coverage: 0.8
+  
+splits:
+  train_ratio: 0.8
+  val_ratio: 0.15
+  test_ratio: 0.05
+  random_seed: 42
